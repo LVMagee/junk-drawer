@@ -6,8 +6,7 @@ import {
   TabNavigation,
   TabNavigationItem,
 } from '@expo/ex-navigation';
-import { FontAwesome } from '@expo/vector-icons';
-
+import { Ionicons } from '@expo/vector-icons';
 import Alerts from '../constants/Alerts';
 import Colors from '../constants/Colors';
 import registerForPushNotificationsAsync
@@ -27,20 +26,20 @@ export default class RootNavigation extends React.Component {
       <TabNavigation tabBarHeight={56} initialTab="home">
         <TabNavigationItem
           id="home"
-          renderIcon={isSelected => this._renderIcon('list', isSelected)}>
+          renderIcon={isSelected => this._renderIcon('ios-list-outline', isSelected)}>
           <StackNavigation initialRoute="home" />
         </TabNavigationItem>
 
         <TabNavigationItem
           id="addItem"
-          renderIcon={isSelected => this._renderIcon('plus', isSelected)}>
+          renderIcon={isSelected => this._renderIcon('ios-add', isSelected)}>
           <StackNavigation initialRoute="form" />
         </TabNavigationItem>
 
         <TabNavigationItem
           id="user"
-          renderIcon={isSelected => this._renderIcon('user', isSelected)}>
-          <StackNavigation initialRoute="user" />
+          renderIcon={isSelected => this._renderIcon('ios-card-outline', isSelected)}>
+          <StackNavigation initialRoute="insurance" />
         </TabNavigationItem>
       </TabNavigation>
     );
@@ -48,10 +47,10 @@ export default class RootNavigation extends React.Component {
 
   _renderIcon(name, isSelected) {
     return (
-      <FontAwesome
+      <Ionicons
         name={name}
         size={32}
-        color={isSelected ? Colors.tabIconSelected : Colors.tabIconDefault}
+        color={isSelected ? "#998b70" : Colors.tabIconDefault}
       />
     );
   }
@@ -82,7 +81,10 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
+  backgroundColor: {
+    backgroundColor: '#FEC611',
+  },
   selectedTab: {
-    color: Colors.tabIconSelected,
+    color: "#998b70",
   },
 });

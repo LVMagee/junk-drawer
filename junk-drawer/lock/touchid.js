@@ -13,7 +13,7 @@ import {
 export default class TouchIdTest extends Component {
   
  _pressHandler() {
-    TouchID.authenticate('to demo this react-native component')
+    TouchID.authenticate('this is a secure way to authenticate yourself')
       .then(success => {
         AlertIOS.alert('Authenticated Successfully');
       })
@@ -41,16 +41,16 @@ const styles = StyleSheet.create({
       alignItems: 'center',
     },
     touchIdButton: {
-      top: 350,
+      top: 290,
       backgroundColor: '#fff',
-      borderWidth: 3,
-      borderRadius: 20,
-      borderColor: '#D41919',
-      padding: 10,
+      borderWidth: 2,
+      borderRadius: 30,
+      borderColor: '#0F0F0F',
+      padding: 15,
     },
     touchIdButtonText: {
       fontSize: 20,
       fontWeight: 'bold',
-      color: '#D41919',
+      color: '#0F0F0F',
     }
 });

@@ -32,6 +32,7 @@ const FormView = props => (
           <Label>Item Category</Label>
           <Select
               name="Category"
+              id="category"
               label="Category"
               options={categoryOptions}
               placeholder="Appliances"
@@ -39,40 +40,50 @@ const FormView = props => (
         </FormGroup>
         <FormGroup>
           <Label>Item Name/Title</Label>
-          <Input />
+          <Input 
+          id="itemName"
+          />
         </FormGroup>
         <FormGroup>
           <Label>Artist/Designer</Label>
-          <Input />
+          <Input 
+          id=""
+          />
         </FormGroup>
         <FormGroup>
           <Label>Manufacturer/Brand</Label>
-          <Input />
+          <Input 
+          id="make"
+          />
         </FormGroup>
         <FormGroup>
           <Label>Serial Number</Label>
-          <Input />
+          <Input 
+          id="serialNumber"
+          />
         </FormGroup>
         <FormGroup>
           <Label>Model Number</Label>
-          <Input />
+          <Input 
+          id="model"
+          />
         </FormGroup>
         <FormGroup>
           <Label>Value</Label>
-          <Input/>
+          <Input
+          id="price"
+          />
         </FormGroup>
         <FormGroup>
           <Label>Date Purchased</Label>
-          <Input placeholder="mm/dd/yyy" />
-        </FormGroup>
-        <FormGroup>
-          <Label>Quantity</Label>
-          <Input/>
+          <Input 
+          id="date"
+          placeholder="mm/dd/yyy" />
         </FormGroup>
       </Fieldset>
     </FieldsContainer>
     <ActionsContainer>
-      <Button icon="md-checkmark" iconPlacement="right">Save</Button>
+      <Button type="submit" icon="md-checkmark" iconPlacement="right">Save</Button>
     </ActionsContainer>
   </Form>
 )

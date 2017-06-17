@@ -17,7 +17,10 @@
     "react": "^16.0.0-alpha.6",
     "react-native": "https://github.com/expo/react-native/archive/sdk-17.0.0.tar.gz",
     "react-native-clean-form": "^0.4.1",
+    "react-native-collapsible": "^0.8.0",
     "react-native-touch-id": "^3.0.0",
+    "react-router": "^4.1.1",
+    "react-router-native": "^4.1.1",
     "redux-form": "^6.8.0"
   },
   "devDependencies": {

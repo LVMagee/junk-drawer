@@ -14,7 +14,7 @@ import TouchIdTest from '../lock/touchid.js';
 
 
 
-export default class HomeScreen extends React.Component {
+export default class StartScreen extends React.Component {
   static route = {
     navigationBar: {
       visible: false,
@@ -25,9 +25,10 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
           <View style={styles.logoContainer}>
-            <Text style={styles.logoText}>
-              JUNK DRAWER
-            </Text>
+            <Image
+              source={require('../assets/images/junk-drawer-logo-3.png')}
+              style={styles.startScreenImage}
+          />
           </View>
           <TouchIdTest/>
       </View>
@@ -42,12 +43,19 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     alignItems: 'center',
-    top: 300,
+    top: 200,
   },
   logoText: {
     fontSize: 17,
     color: 'rgba(96,100,109, 1)',
     lineHeight: 23,
     textAlign: 'center',
+  },
+  startScreenImage: {
+    width: 350,
+    height: 248,
+    resizeMode: 'contain',
+    marginTop: 3,
+    marginLeft: -10,
   },
 });
