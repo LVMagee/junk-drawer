@@ -26,9 +26,9 @@ export default class StartScreen extends React.Component {
       <View style={styles.container}>
           <View style={styles.logoContainer}>
             <Image
-              source={require('../assets/images/junk-drawer-logo-3.png')}
+              source={require('../assets/images/junk-drawer.png')}
               style={styles.startScreenImage}
-          />
+            />
           </View>
           <TouchIdTest/>
       </View>
@@ -43,19 +43,12 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     alignItems: 'center',
-    top: 200,
-  },
-  logoText: {
-    fontSize: 17,
-    color: 'rgba(96,100,109, 1)',
-    lineHeight: 23,
-    textAlign: 'center',
+    top: 250,
   },
   startScreenImage: {
-    width: 350,
-    height: 248,
+    width: 100,
+    height: 98,
     resizeMode: 'contain',
     marginTop: 3,
-    marginLeft: -10,
   },
 });

@@ -83,7 +83,7 @@ const FormView = props => (
       </Fieldset>
     </FieldsContainer>
     <ActionsContainer>
-      <Button type="submit" icon="md-checkmark" iconPlacement="right">Save</Button>
+      <Button style={{position: 'absolute', left: 0, right: 0, bottom: 0}} type="submit" icon="md-checkmark" iconPlacement="right">Save</Button>
     </ActionsContainer>
   </Form>
 )

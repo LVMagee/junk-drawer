@@ -42,7 +42,7 @@ const InsuranceForm = props => (
           <Input placeholder="mm/dd/yyyy" />
         </FormGroup>
         <FormGroup>
-          <Label>/Additional Information</Label>
+          <Label>Additional Information</Label>
           <Input/>
         </FormGroup>
       </Fieldset>

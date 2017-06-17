@@ -31,7 +31,6 @@ export default class HomeScreen extends React.Component {
           <NavHeader/>
           <Header/>
         </View>
-
         <ScrollView>
           <App/>
         </ScrollView>

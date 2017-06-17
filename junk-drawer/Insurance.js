@@ -78,6 +78,6 @@ const styles = StyleSheet.create({
   },
   spacing: {
     paddingTop: 20,
-    fontSize: 16, 
+    fontSize: 20, 
   },
 })

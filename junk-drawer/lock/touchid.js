@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
       alignItems: 'center',
     },
     touchIdButton: {
-      top: 290,
+      top: 320,
       backgroundColor: '#fff',
       borderWidth: 2,
       borderRadius: 30,

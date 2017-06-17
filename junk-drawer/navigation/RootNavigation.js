@@ -50,7 +50,7 @@ export default class RootNavigation extends React.Component {
       <Ionicons
         name={name}
         size={32}
-        color={isSelected ? "#998b70" : Colors.tabIconDefault}
+        color={isSelected ? "#2DD4FF" : Colors.tabIconDefault}
       />
     );
   }
@@ -85,6 +85,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#FEC611',
   },
   selectedTab: {
-    color: "#998b70",
+    color: "#2DD4FF",
   },
 });

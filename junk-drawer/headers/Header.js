@@ -25,17 +25,17 @@ export default class Header extends React.Component {
 
 const styles = StyleSheet.create({
   toolbar: {
-  	backgroundColor: '#fff',
-    paddingTop:30,
+  	backgroundColor:'rgba(0,0,0,0)',
+    paddingTop:20,
     paddingBottom:20,
-    borderBottomWidth: 0.2,
+    borderBottomWidth: 0.3,
     borderBottomColor: '#b2b2b2',
   },
   title: {
   	fontSize: 30,
   	marginLeft: 30,
   	color: 'black',
-    backgroundColor: 'white',
+    backgroundColor:'rgba(0,0,0,0)',
   },
 })
 
