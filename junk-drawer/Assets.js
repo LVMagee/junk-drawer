@@ -26,7 +26,7 @@ export default class App extends React.Component {
   }
 
   _fetchData() {
-    fetch('localhost:8080/api/assets')
+    fetch('https://powerful-atoll-50523.herokuapp.com/api/assets')
     .then((response) => response.json())
     .then((responseJson) => {
       this.setState({
